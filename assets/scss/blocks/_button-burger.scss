@@ -1,18 +1,22 @@
 .burger {
     @include reset-button;
-    @include squere(30px);
+    @include squere(20px);
     @include flex-center;
+    display: none;
     position: relative;
     z-index: 2;
+
+    @include mobile {
+        display: flex;
+    }
 
     &::before,
     &::after {
         content: '';
         display: block;
         width: 100%;
-        height: 3px;
-        background: black;
-        border-radius: 3px;
+        height: 2px;
+        background: var(--color-btn);
 
         position: absolute;
         left: 50%;
@@ -31,9 +35,8 @@
     & span {
         font-size: 0;
         width: 100%;
-        height: 3px;
-        background: black;
-        border-radius: 3px;
+        height: 2px;
+        background: var(--color-btn);
         transition: all .3s ease;
     }
 

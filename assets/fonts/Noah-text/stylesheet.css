@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Noah Text';
+    src: url('NoahText-BlackItalic.woff2') format('woff2'),
+        url('NoahText-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noah Text';
+    src: url('NoahText-Black.woff2') format('woff2'),
+        url('NoahText-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noah Text';
+    src: url('NoahText-BoldItalic.woff2') format('woff2'),
+        url('NoahText-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noah Text';
+    src: url('NoahText-Thin.woff2') format('woff2'),
+        url('NoahText-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noah Text';
+    src: url('NoahText-Regular.woff2') format('woff2'),
+        url('NoahText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noah Text';
+    src: url('NoahText-ThinItalic.woff2') format('woff2'),
+        url('NoahText-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noah Text';
+    src: url('NoahText-ExtraBold.woff2') format('woff2'),
+        url('NoahText-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noah Text';
+    src: url('NoahText-ExtraBoldItalic.woff2') format('woff2'),
+        url('NoahText-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noah Text';
+    src: url('NoahText-Medium.woff2') format('woff2'),
+        url('NoahText-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noah Text';
+    src: url('NoahText-LightItalic.woff2') format('woff2'),
+        url('NoahText-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noah Text';
+    src: url('NoahText-Heavy.woff2') format('woff2'),
+        url('NoahText-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noah Text';
+    src: url('NoahText-UltraLightItalic.woff2') format('woff2'),
+        url('NoahText-UltraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noah Text';
+    src: url('NoahText-HeavyItalic.woff2') format('woff2'),
+        url('NoahText-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noah Text';
+    src: url('NoahText-UltraLight.woff2') format('woff2'),
+        url('NoahText-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noah Text';
+    src: url('NoahText-Light.woff2') format('woff2'),
+        url('NoahText-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noah Text';
+    src: url('NoahText-RegularItalic.woff2') format('woff2'),
+        url('NoahText-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noah Text';
+    src: url('NoahText-MediumItalic.woff2') format('woff2'),
+        url('NoahText-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noah Text';
+    src: url('NoahText-Bold.woff2') format('woff2'),
+        url('NoahText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

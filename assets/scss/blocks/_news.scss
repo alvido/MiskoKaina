@@ -1,0 +1,65 @@
+.news {
+    position: relative;
+    padding: 85px 0;
+
+    @include mobile {
+        padding: 40px 0;
+    }
+
+    & .container {
+        @include mobile {
+            display: contents;
+        }
+    }
+
+    & li {
+        min-height: 380px;
+        display: flex;
+        align-items: flex-end;
+        border-radius: var(--border-radius-small);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+
+
+        & .content {
+            flex: 1;
+            padding: 20px;
+            color: var(--color-white);
+            background-color: var(--color-bg);
+
+            & span {
+                opacity: .6;
+                font-size: 12px;
+            }
+
+            & h3 {
+                margin-block: 6px;
+                font-weight: 600;
+                font-size: 24px;
+            }
+
+            & p {
+                max-width: 230px;
+                font-weight: 400;
+                font-size: 16px;
+                color: var(--color-white);
+                opacity: .6;
+            }
+
+            & .row {
+                align-items: flex-end;
+            }
+        }
+    }
+
+    & .swiper-button-next,
+    & .swiper-button-prev {
+        bottom: 170px;
+
+        @include mobile {
+            bottom: 50%;
+            translate: 0 50%;
+        }
+    }
+}

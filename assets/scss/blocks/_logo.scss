@@ -5,10 +5,47 @@
     }
 
     & img {
-        max-width: 90px;
+        max-width: 30px;
+    }
+
+    &__desc {
+        display: flex;
+        align-items: center;
+        gap: 0 12px;
 
         @include mobile {
-        max-width: 70px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        & span {
+            font-family: "Noah Text";
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 1.2;
+        }
+
+        & hr {
+            height: 35px;
+            opacity: 0.2;
+            border: 1px solid #146F60;
+            border-left: none;
+            margin: 0;
+
+            @include mobile {
+                display: none;
+            }
+        }
+
+        & p {
+            max-width: 130px;
+            font-weight: 500;
+            @include fluid-text(14, 10);
+            color: #847D7D;
+
+            @include mobile {
+                max-width: none;
+            }
         }
     }
 }

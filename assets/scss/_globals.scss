@@ -4,19 +4,18 @@ html {
 
 body {
     font-family: var(--font-family-base);
+    @include fluid-text(20, 16);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0%;
-
-    @include mobile {
-        line-height: 1.2;
-    }
+    line-height: 1.16;
 
     &.lock {
         max-height: 100vh;
         overflow: hidden;
     }
+}
+
+p {
+    color: var(--color-text);
 }
 
 main {
@@ -45,24 +44,23 @@ h6 {
 }
 
 h1 {
-    @include fluid-text(42, 30);
+    @include fluid-text(50, 44);
     font-weight: 400
 }
 
 h2 {
-    @include fluid-text(30, 24);
-    font-weight: 400
+    @include fluid-text(46, 40);
 }
 
 h3 {
     @include fluid-text(24, 20);
-    font-weight: 500
+    font-weight: 600
 }
 
 h4 {
-    @include fluid-text(16, 20);
+    @include fluid-text(20, 16);
 }
 
 h5 {
-    @include fluid-text(14, 14);
+    @include fluid-text(16, 14);
 }

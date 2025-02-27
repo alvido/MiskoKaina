@@ -11,12 +11,31 @@
         align-items: center;
         width: 100%;
         min-width: 150px;
-        height: 36px;
-        padding-inline: 12px 24px;
-        border: 1px solid #8239eb;
-        border-radius: 5px;
         cursor: pointer;
 
+        font-family: var(--font-family-base);
+        outline: none;
+        width: 100%;
+        height: var(--input-height);
+        padding: 0 23px;
+        font-size: 16px;
+        color: var(--color-black);
+        background-color: #F7F7F7;
+        border: 2px solid #E6E8EC2B;
+        border-radius: 26px;
+
+        &.select-arrow-active {
+            background-color: var(--color-white);
+            border-color: transparent;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            box-shadow: 0px 4px 23px 0px #0000001A;
+
+            &:after {
+                rotate: 180deg;
+                background: url(../images/icons/arrow-down.svg) no-repeat center/cover;
+            }
+        }
 
         &::after {
             content: "";
@@ -31,35 +50,39 @@
             transition: rotate 0.3s ease;
         }
 
-        &.select-arrow-active:after {
-            rotate: 180deg;
-        }
+
     }
 
     .select-items {
+        padding: 20px 0;
+        max-height: 260px;
         min-width: max-content;
         position: absolute;
-        top: 105%;
+        top: 100%;
         left: 0;
         right: 0;
         z-index: 9;
-        background-color: #fff;
-        border-radius: 5px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: var(--color-white);
+        overflow-y: auto;
+        box-shadow: 0px 4px 23px 0px #0000001A;
+        border-bottom-right-radius: 26px;
+        border-bottom-left-radius: 26px;
 
         &>li {
-            padding: 8px 12px;
+            padding: 5px 20px;
             cursor: pointer;
+            font-size: 16px;
+            color: var(--color-placeholder);
+
 
             &.same-as-selected {
-                color: #fff;
-                background-color: #8239eb;
+                color: var(--color-white);
+                background-color: var(--color-btn);
             }
 
             @include hover {
-                color: #fff;
-                background-color: #8239eb;
+                color: var(--color-white);
+                background-color: var(--color-btn);
             }
         }
     }

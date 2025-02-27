@@ -1,2 +1,95 @@
 .hero {
+    padding: 92px 0;
+    color: var(--color-white);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include mobile {
+        padding: 32px 0;
+    }
+
+    & .row {
+        gap: 20px;
+        justify-content: space-between;
+
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+
+    &__editor {
+        max-width: 670px;
+        flex: 1;
+
+        @include tablet {
+            max-width: none;
+        }
+
+        & p {
+            margin-block: 20px;
+            color: var(--color-white);
+        }
+
+        & ul,
+        & ol {
+            margin-block: 38px;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        & ul {
+            & li {
+                &::marker {
+                    color: var(--color-yellow);
+                }
+            }
+        }
+
+
+
+    }
+
+    &__form {
+        width: 350px;
+        max-width: 600px;
+        padding: 35px 30px;
+        color: var(--color-black);
+        background-color: var(--color-white);
+        box-shadow: 0px 4px 60px 0px #00000040;
+        border-radius: var(--border-radius-small);
+
+        &.column-2 {
+            width: 55%;
+
+            @include tablet {
+                width: 100%;
+            }
+
+            & form {
+                // display: grid;
+                // grid-template-columns: 1fr 1fr;
+                // align-items: flex-end;
+                display: flex;
+                flex-wrap: wrap;
+
+                & .form-group {
+                    width: calc(50% - 10px);
+                }
+            }
+        }
+
+        & p {
+            margin-top: 8px;
+        }
+
+        & .btn-primary {
+            width: 100%;
+            max-width: 320px;
+            margin: 30px auto 0;
+        }
+    }
 }

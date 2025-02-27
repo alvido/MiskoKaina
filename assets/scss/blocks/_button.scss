@@ -1,16 +1,91 @@
-.button {
+.btn-primary {
+    position: relative;
     @include reset-button;
     @include flex-center;
-    gap: 8px;
-    padding: 10px 20px;
-    border-radius: var(--border-radius-small);
-
+    @include fluid-text(16, 12);
+    height: var(--button-height);
+    font-family: "TT Norms";
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-inline: 20px 52px;
     color: var(--color-white);
-    background: var(--color-black);
-    border: 2px solid var(--color-black);
+    background: var(--color-btn);
+    border-radius: var(--border-radius-large);
 
     @include hover {
-        color: var(--color-black);
-        background: transparent;
+        color: var(--color-dark);
+        background: var(--color-yellow);
+
+        & span {
+            color: var(--color-dark);
+            rotate: -45deg;
+        }
     }
+
+    & span {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        translate: 0 -50%;
+        @include flex-center;
+        @include squere(32px);
+        color: var(--color-btn);
+        background-color: var(--color-white);
+        border-radius: 50%;
+        transition-duration: var(--transition-duration);
+    }
+
+    &.btn-second {
+        color: var(--color-dark);
+        background-color: var(--color-yellow);
+
+        & span {
+            color: var(--color-dark);
+        }
+
+        @include hover {
+            color: var(--color-white);
+            background-color: var(--color-btn);
+
+            & span {
+                color: var(--color-btn);
+            }
+        }
+    }
+}
+
+.btn-small {
+    @include reset-button;
+    @include flex-center;
+    @include squere(50px);
+    height: 50px;
+    background-color: var(--color-yellow);
+    border-radius: 50%;
+
+    @include mobile {
+        @include squere(40px);
+        height: 40px;
+    }
+
+    & svg {
+        color: var(--color-black);
+        transition: all .3s ease;
+    }
+
+    @include hover {
+        background-color: var(--color-btn);
+
+        & svg {
+            rotate: -45deg;
+            color: var(--color-white);
+        }
+    }
+}
+
+.icon {
+    position: relative;
+    @include reset-button;
+    @include flex-center;
 }

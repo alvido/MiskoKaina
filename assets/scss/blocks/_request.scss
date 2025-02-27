@@ -1,0 +1,107 @@
+.request {
+
+
+    &__wrap {
+        padding: 40px 20px;
+        color: var(--color-white);
+        border-radius: var(--border-radius-small);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__inner {
+        margin: 0 auto;
+        max-width: 960px;
+    }
+
+    & .subtitle {
+        display: block;
+        font-size: 24px;
+        margin-bottom: 12px;
+
+        @include mobile {
+            text-align: center;
+        }
+    }
+
+    & h2 {
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 1.2;
+
+        @include mobile {
+            text-align: center;
+        }
+    }
+
+    &__form {
+
+        & form {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: flex-end;
+            gap: 20px;
+
+            @include tablet {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @include phone {
+                grid-template-columns: 1fr;
+            }
+
+            & .form-group {
+                margin: 0;
+
+                @include phone {
+                    width: 100%;
+                    max-width: 290px;
+                    margin: 0 auto;
+                }
+            }
+
+            & label {
+                font-size: 14px;
+            }
+
+            & .btn-second {
+                @include phone {
+                    width: 100%;
+                    max-width: 290px;
+                    margin: 10px auto 0;
+                }
+            }
+        }
+    }
+}
+
+.quote {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 40px;
+        border-radius: var(--border-radius-small);
+
+        & svg {
+            max-width: 25px;
+        }
+
+        & .column {
+            margin-top: auto;
+            gap: 9px;
+        }
+
+        & .author {
+            margin-top: 33px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        & .date {
+            font-size: 12px;
+            color: var(--color-text);
+        }
+    }
+}

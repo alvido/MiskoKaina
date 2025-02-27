@@ -1,5 +1,18 @@
+    form {
+        margin-top: 32px;
+        column-gap: 20px;
+    }
+
     label {
-        display: flex;
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 12px;
+
+        &.required::after {
+            content: " *";
+            color: var(--color-red);
+        }
     }
 
     input,
@@ -8,17 +21,20 @@
         outline: none;
         width: 100%;
         height: var(--input-height);
-        padding: 16px 24px;
-
+        padding: 0 23px;
+        font-size: 16px;
         color: var(--color-black);
-        border: 1px solid var(--color-gray-alt);
+        background-color: #F7F7F7;
+        border: 2px solid #E6E8EC2B;
+        border-radius: 26px;
+
 
         &::placeholder {
-            color: var(--color-gray);
+            color: var(--color-placeholder);
         }
 
         &:focus-visible {
-            border: 1px solid var(--color-blue);
+            border: 2px solid var(--color-btn);
         }
 
     }
@@ -26,6 +42,49 @@
     textarea {
         min-height: 120px;
         resize: none;
+    }
+
+    .form-group {
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+
+    .add-field,
+    .remove-field {
+        position: absolute;
+        right: -10px;
+        bottom: 14px;
+        font-size: 0;
+        border: none;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        background: var(--color-btn);
+        border-radius: 50%;
+
+
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 3px;
+            background: white;
+        }
+
+        &::after {
+            rotate: 90deg;
+        }
+    }
+
+    .remove-field {
+        background: var(--color-red);
+
+        &::after {
+            display: none;
+        }
     }
 
     /* custom */

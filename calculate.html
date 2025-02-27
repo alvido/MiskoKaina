@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes"> <!-- Для Android -->
+    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Для iOS -->
+
+    <title>Misko Kaina</title>
+
+    <link rel="icon" type="image/png" href="assets/images/logo.svg">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="site" id="page">
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__inner">
+                        <button class="burger" id="burgerButton">
+                            <span>
+                                Menu
+                            </span>
+                        </button>
+                        <div class="header__logo">
+                            <a href="index.html" class="logo">
+                                <img src="assets/images/logo.svg" alt="logo">
+                            </a>
+                            <div class="logo__desc">
+                                <span class="site__name">
+                                    MIŠKO KAINA
+                                </span>
+                                <hr>
+                                <p class="site__desc">
+                                    Dirbame su pagarba gamtai
+                                </p>
+                            </div>
+                        </div>
+                        <div class="header__links contact__links">
+                            <div class="column">
+                                <span style="color: var(--color-gray);">
+                                    Parašykite mums:
+                                </span>
+                                <a href="mailto:info@miskokaina.lt">
+                                    <img src="assets/images/icons/mail.svg" alt="mail">
+                                    info@miskokaina.lt
+                                </a>
+                            </div>
+                            <div class="column">
+                                <span style="color: var(--color-gray);">
+                                    Dirbame nuo 8:00h iki 19:00h
+                                </span>
+                                <a href="tel:+37065533322">
+                                    <img src="assets/images/icons/phone.svg" alt="phone">
+                                    +370 655 33322
+                                </a>
+                                <span style="color: var(--color-btn);">Užregistruoti skambutį</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary">
+                            GAUTI PASIŪLYMĄ
+                            <span>
+                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1 7a1 1 0 000 2V7zm14.707 1.707a1 1 0 000-1.414L9.343.929A1 1 0 007.93 2.343L13.586 8l-5.657 5.657a1 1 0 101.414 1.414l6.364-6.364zM1 9h14V7H1v2z"
+                                        fill="#146F60" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="#about">Apie mus</a>
+                        </li>
+                        <li>
+                            <a href="#Atsiliepimai">Atsiliepimai</a>
+                        </li>
+                        <li>
+                            <a href="calculate.html">Calculate</a>
+                        </li>
+                        <li>
+                            <a href="forest.html">Miškų kirtimas</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Kontaktai</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Pagrindinis</a>
+                        </li>
+                        <li>
+                            <a href="#services">Paslaugos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="mobile__nav">
+            <button class="icon close" id="closeMenu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.0001 9.8183L2.18182 0L0 2.18182L9.8183 12.0001L0.000232995 21.8182L2.18205 24L12.0001 14.1819L21.8182 24L24 21.8182L14.1819 12.0001L24.0002 2.18182L21.8184 1.07288e-06L12.0001 9.8183Z"
+                        fill="white" />
+                </svg>
+            </button>
+            <nav class="nav" role="navigation" aria-label="mobile navigation">
+                <button class="btn-primary">
+                    GAUTI PASIŪLYMĄ
+                    <span>
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1 7a1 1 0 000 2V7zm14.707 1.707a1 1 0 000-1.414L9.343.929A1 1 0 007.93 2.343L13.586 8l-5.657 5.657a1 1 0 101.414 1.414l6.364-6.364zM1 9h14V7H1v2z"
+                                fill="#146F60" />
+                        </svg>
+                    </span>
+                </button>
+                <div class="contact__links">
+                    <div class="column">
+                        <span style="color: var(--color-gray);">
+                            Parašykite mums:
+                        </span>
+                        <a href="mailto:info@miskokaina.lt">
+                            <img src="assets/images/icons/mail.svg" alt="mail">
+                            info@miskokaina.lt
+                        </a>
+                    </div>
+                    <div class="column">
+                        <span style="color: var(--color-gray);">
+                            Dirbame nuo 8:00h iki 19:00h
+                        </span>
+                        <a href="tel:+37065533322">
+                            <img src="assets/images/icons/phone.svg" alt="phone">
+                            +370 655 33322
+                        </a>
+                        <span style="color: var(--color-btn);">Užregistruoti skambutį</span>
+                    </div>
+                </div>
+                <ul class="nav__list">
+                    <li>
+                        <a href="#about">Apie mus</a>
+                    </li>
+                    <li>
+                        <a href="#Atsiliepimai">Atsiliepimai</a>
+                    </li>
+                    <li>
+                        <a href="calculate.html">Calculate</a>
+                    </li>
+                    <li>
+                        <a href="forest.html">Miškų kirtimas</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Kontaktai</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Pagrindinis</a>
+                    </li>
+                    <li>
+                        <a href="#services">Paslaugos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <main class="main" id="primary">
+            <section class="hero" style="background-image: url(assets/images/home-bg.png);">
+                <div class="container">
+                    <div class="row">
+                        <div class="hero__editor">
+                            <h1 class="title">
+                                Šios interaktyvios <b>miško kainos skaičiuoklės</b> pagalba sužinosite apytikrę savo
+                                miško kainą
+                            </h1>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        Miško kainos skaičiuoklė lengvai naudojama
+                                    </li>
+                                    <li>
+                                        Rezultatas gaunamas iškart, nereikia laukti miško kainos
+                                    </li>
+                                    <li>
+                                        Algoritmas gana tiksliai vertina 1
+                                    </li>
+                                    <li>
+                                        100% tikslią miško kainą įvertinsime individualiai
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hero__form column-2">
+                            <div class="content">
+                                <h3>Išmani miško kainos skaičiuoklė</h3>
+                                <p>Ši miško kainos skaičiuoklė padės preliminariai sužinoti Jūsų miško kainą. Norite
+                                    tikslaus NEMOKAMO įvertinimo, įveskite po skaičiuokle esančioje formoje kontaktinius
+                                    duomenis, susisieksime dėl tikslaus eksperto įverinimo</p>
+                            </div>
+                            <form action="#">
+                                <div class="form-group">
+                                    <label>Miško amžius</label>
+                                    <input type="text" name="metai" placeholder="Metai">
+                                </div>
+                                <div class="form-group">
+                                    <label>Miško plotas</label>
+                                    <input type="text" name="hektarai" placeholder="Hektarai">
+                                </div>
+                                <div class="form-group">
+                                    <label>Pagrindinė medžių rūšis</label>
+                                    <div class="custom-select">
+                                        <select autocomplete="off">
+                                            <option value="">-</option>
+                                            <option value="1">Metai</option>
+                                            <option value="2">Hektarai</option>
+                                            <option value="3">Metai</option>
+                                            <option value="4">Hektarai</option>
+                                            <option value="5">Metai</option>
+                                            <option value="6">Hektarai</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Ar miškas kirstas?</label>
+                                    <div class="custom-select">
+                                        <select autocomplete="off">
+                                            <option value="">Ne</option>
+                                            <option value="1">Metai</option>
+                                            <option value="2">Hektarai</option>
+                                            <option value="3">Metai</option>
+                                            <option value="4">Hektarai</option>
+                                            <option value="5">Metai</option>
+                                            <option value="6">Hektarai</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <button type="submit" class="btn-primary">
+                                    SIŲSTI UŽKLAUSĄ
+                                    <span>
+                                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1 7a1 1 0 000 2V7zm14.707 1.707a1 1 0 000-1.414L9.343.929A1 1 0 007.93 2.343L13.586 8l-5.657 5.657a1 1 0 101.414 1.414l6.364-6.364zM1 9h14V7H1v2z"
+                                                fill="#146F60"></path>
+                                        </svg>
+                                    </span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="editor">
+                <div class="container">
+                    <div class="editor__content">
+                        <h2 class=" ">Tvarus miškų valdymas – nauda gamtai ir Jums</h2>
+                        <p>
+                            Jau statomame architektų studijos HEIMA projekte, uždaroje teritorijoje iškils 2 keturių
+                            korpusų
+                            pastatai, kuriuose bus įrengti 55 apartamentai, komercinės ir administracinės paskirties
+                            patalpos.
+                        </p>
+
+                        <p>
+                            Čia galite rinktis 30-202 kv.m apartamentus. Šiame etape projekto vystytojas siūlo
+                            apartamentų
+                            jungimo bei suplanavimo pasirinkimo galimybę. Tai puiki proga pagal asmeninį poreikį
+                            susikurti
+                            savo svajonių namus, kurių tikrai verta palaukti - projekto pabaiga numatyta 2026 m. II
+                            ketvirtį. Abu pastatai bus nukreipti į svarbiausius Vilniaus taškus, o pro penthouse
+                            apartamentų
+                            langus atsivers Senamiesčio panorama.
+                        </p>
+
+                        <p>
+                            Kuriant šį projektą iki smulkmenų apgalvota kiekviena detalė, jog galėtumėte čia gyventi
+                            patogiai, šiuolaikiškai ir kokybiškai. Išskirtinį patogumą gyvenant Senamiestyje užtikrina
+                            požeminės automobilių parkavimo vietos, sandėliukai, liftas, konsjeržas, modernios
+                            technologijos, A++ klasė, uždara ir saugoma teritorija, žaliosios zonos.
+                        </p>
+
+                        <p>
+                            Jei ieškote didelių erdvių, aukščiausios gyvenimo kokybės ir ilgalaikę vertę kuriančių
+                            sprendimų
+                            Vilniaus Senamiestyje, kviečiame susipažinti su senosios architektūros apsuptu naujos
+                            statybos
+                            projektu sostinės širdyje.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="faq" id="faq">
+                <div class="container">
+                    <h2 class="center section-title">Dažnai užduodami klausimai</h2>
+                    <ul class="faq__list">
+                        <li class="faq__item">
+                            <div class="action">
+                                <h4>Do you install lighting on the stairs?</h4>
+                                <button class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 5V19" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M5 12H19" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg></button>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                    printer took a galley of type and scrambled it to make a type specimen book. It has
+                                    survived not only five centuries, but also the leap into electronic typesetting,
+                                    remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="action">
+                                <h4>Can i install a heated staircase?</h4>
+                                <button class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 5V19" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M5 12H19" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg></button>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                    printer took a galley of type and scrambled it to make a type specimen book. It has
+                                    survived not only five centuries, but also the leap into electronic typesetting,
+                                    remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="action">
+                                <h4>What should be the distance between the balusters?</h4>
+                                <button class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 5V19" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M5 12H19" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg></button>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                    printer took a galley of type and scrambled it to make a type specimen book. It has
+                                    survived not only five centuries, but also the leap into electronic typesetting,
+                                    remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="action">
+                                <h4>Is it possible to make a staircase you like cheaper?</h4>
+                                <button class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 5V19" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M5 12H19" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg></button>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                    printer took a galley of type and scrambled it to make a type specimen book. It has
+                                    survived not only five centuries, but also the leap into electronic typesetting,
+                                    remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="action">
+                                <h4>Are you working under a contract?</h4>
+                                <button class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 5V19" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M5 12H19" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg></button>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                    printer took a galley of type and scrambled it to make a type specimen book. It has
+                                    survived not only five centuries, but also the leap into electronic typesetting,
+                                    remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="action">
+                                <h4>Is it possible to split the payment into parts?</h4>
+                                <button class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 5V19" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M5 12H19" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg></button>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                    printer took a galley of type and scrambled it to make a type specimen book. It has
+                                    survived not only five centuries, but also the leap into electronic typesetting,
+                                    remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="header__logo">
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo-footer.svg" alt="logo">
+                        </a>
+                        <div class="logo__desc">
+                            <span class="site__name">
+                                MIŠKO KAINA
+                            </span>
+                            <hr>
+                            <p class="site__desc">
+                                Dirbame su pagarba gamtai
+                            </p>
+                        </div>
+                    </div>
+                    <p class="medium-text">
+                        Spygliuociu parkas pousia gyvenvietes vidu. Cia, tarp medziu, jau irengtos erdves maziems ir
+                        dideliems. Spygliuociu parkas pousia gyvenvietes vidu. Cia, tarp medziu, jau irengtos erdves
+                        maziems
+                        ir dideliems.
+                    </p>
+                </div>
+                <div class="footer__grid">
+                    <div class="footer__column">
+                        <img src="assets/images/icons/footer/mail.svg" alt="">
+                        <h3>Rašykite</h3>
+                        <p class="medium-text">Laiške neužmirškite įvesti savojo sklypo kadastrinio nr.</p>
+                        <a href="mailto:info@miskokaina.lt">info@miskokaina.lt</a>
+
+                    </div>
+                    <div class="footer__column">
+                        <img src="assets/images/icons/footer/phone.svg" alt="">
+                        <h3>Skambinkite</h3>
+                        <p class="medium-text">Asmeninės konsultacijos ir paslaugos privatiems miškų savininkams</p>
+                        <a href="tel:+370 614 81 385">+370 614 81 385</a>
+                    </div>
+                    <div class="footer__column">
+                        <img src="assets/images/icons/footer/nav.svg" alt="">
+                        <h3>Navigacija</h3>
+                        <nav class="footer__nav nav">
+                            <ul class="nav__list">
+                                <li>
+                                    <a href="index.html">Pagrindinis</a>
+                                </li>
+                                <li>
+                                    <a href="#services">Paslaugos</a>
+                                </li>
+                                <li>
+                                    <a href="#about">Apie mus</a>
+                                </li>
+                                <li>
+                                    <a href="#Atsiliepimai">Atsiliepimai</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Kontaktai</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__column">
+                        <img src="assets/images/icons/footer/doc.svg" alt="">
+                        <h3>Skirkite pasimatymą</h3>
+                        <p class="medium-text">
+                            Spauskite ir rezervuokite laiką pirminiam vaizdo pokalbiui. Tuo atveju,
+                            jei norite susitikti gyvai, susisiekite telefonu, ir sutarsime patogų laiką.
+                        </p>
+                        <button class="btn-primary btn-second">SIŲSTI UŽKLAUSĄ
+                            <span>
+                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1 7a1 1 0 000 2V7zm14.707 1.707a1 1 0 000-1.414L9.343.929A1 1 0 007.93 2.343L13.586 8l-5.657 5.657a1 1 0 101.414 1.414l6.364-6.364zM1 9h14V7H1v2z"
+                                        fill="#146F60" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="copy">
+                    <p class="medium-text center">2025 © Miško Kaina. Visos teisės saugomos.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/custom-select.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

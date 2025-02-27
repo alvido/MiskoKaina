@@ -1,4 +1,130 @@
 .footer {
-    padding: 10px 0;
-    background: #444;
+    color: var(--color-white);
+    background: var(--color-bg);
+
+    & p {
+        color: var(--color-white);
+    }
+
+    & .logo__desc {
+        flex-direction: row;
+        align-items: center;
+
+        & p {
+            font-size: 14px;
+            max-width: 130px;
+        }
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        padding: 70px 0;
+        border-bottom: 1px solid #FFFFFF0D;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 30px 0;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        @include tablet {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__column {
+        padding: 50px 45px 30px 45px;
+
+        @include tablet {
+            padding: 30px 10px 30px 0;
+        }
+
+        &:first-child {
+            padding-left: 0;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #FFFFFF0D;
+
+            @include tablet {
+                padding: 30px 10px 30px 0;
+            }
+        }
+
+        &:nth-child(2) {
+            padding: 26px 45px 30px 0;
+            grid-column: 1;
+            grid-row: 2;
+
+            @include tablet {
+                grid-column: 2;
+                grid-row: 1;
+                padding: 30px 10px 30px 0;
+                border-bottom: 1px solid #FFFFFF0D;
+            }
+        }
+
+        &:nth-child(3) {
+            border-left: 1px solid #FFFFFF0D;
+            border-right: 1px solid #FFFFFF0D;
+            grid-row: span 2;
+
+            @include tablet {
+                border: none;
+                grid-row: span 1;
+
+            }
+
+        }
+
+        &:last-child {
+            grid-row: span 2;
+
+            @include tablet {
+                grid-row: span 1;
+
+            }
+        }
+
+        & h3 {
+            margin: 20px 0 15px 0;
+        }
+
+        & a {
+            display: inline-block;
+            margin-top: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.16;
+
+            @include hover {
+                color: var(--color-yellow);
+            }
+        }
+
+        & p {
+            max-width: 280px;
+        }
+
+        & button {
+            width: 240px;
+            margin-top: 30px;
+
+            @include mobile {
+                width: 100%;
+            }
+        }
+    }
+
+    & .copy {
+        height: 90px;
+        @include flex-center;
+        border-top: 1px solid #FFFFFF0D;
+    }
 }

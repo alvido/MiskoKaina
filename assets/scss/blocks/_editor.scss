@@ -1,0 +1,68 @@
+.editor {
+    padding: 80px 0;
+
+    @include mobile {
+        padding: 30px 0;
+    }
+
+    & ul,
+    & ol {
+        padding-left: 20px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--color-text);
+
+        &:last-of-type {
+        margin-bottom: 0;
+        }
+    }
+
+    & .row {
+        margin-top: 30px;
+        padding-top: 30px;
+        gap: 30px;
+        align-items: flex-start;
+        border-top: 1px solid #EDF3F3;
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    & .column {
+        width: 100%;
+        max-width: 50%;
+
+        @include mobile {
+           max-width: none;
+        }
+    }
+
+
+    &__content {
+
+        & h1,
+        & h2 {
+            margin-bottom: 30px;
+            font-weight: 400;
+            font-family: "DM Serif Display";
+            color: var(--color-bg);
+        }
+
+        & h3,
+        & h4,
+        & h5,
+        & h6 {
+            margin-bottom: 20px;
+            font-weight: 400;
+            font-family: "DM Serif Display";
+            color: var(--color-bg);
+        }
+    }
+
+    & p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
