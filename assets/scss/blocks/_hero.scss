@@ -26,6 +26,19 @@
             max-width: none;
         }
 
+        @include mobile {
+            display: contents;
+
+            & .title {
+                text-align: center;
+            }
+
+            & .content {
+                order: 1;
+                align-self: flex-start;
+            }
+        }
+
         & p {
             margin-block: 20px;
             color: var(--color-white);
@@ -39,6 +52,10 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 20px;
+
+            @include mobile {
+                margin-block: 20px;
+            }
         }
 
         & ul {
@@ -48,8 +65,6 @@
                 }
             }
         }
-
-
 
     }
 
@@ -62,12 +77,17 @@
         box-shadow: 0px 4px 60px 0px #00000040;
         border-radius: var(--border-radius-small);
 
+        @include tablet {
+            width: auto;
+        }
+
         &.column-2 {
             width: 55%;
 
             @include tablet {
                 width: 100%;
             }
+
 
             & form {
                 // display: grid;

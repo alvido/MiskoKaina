@@ -1,5 +1,12 @@
 .editor {
     padding: 80px 0;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include desktop {
+        background-size: contain;
+    }
 
     @include mobile {
         padding: 30px 0;
@@ -13,7 +20,7 @@
         color: var(--color-text);
 
         &:last-of-type {
-        margin-bottom: 0;
+            margin-bottom: 0;
         }
     }
 
@@ -34,7 +41,7 @@
         max-width: 50%;
 
         @include mobile {
-           max-width: none;
+            max-width: none;
         }
     }
 
@@ -64,5 +71,79 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
+    }
+}
+
+.info {
+    margin-top: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    &>div {
+        max-width: 182px;
+        position: relative;
+
+        @include tablet {
+            max-width: none;
+
+            &:nth-child(odd) {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+
+        &::after {
+            content: "";
+            width: 1px;
+            height: 100px;
+            position: absolute;
+            top: 50%;
+            left: -34%;
+            translate: 0 -50%;
+            background: #F2EBED;
+
+            @include tablet {
+                left: -17px;
+            }
+        }
+
+        &:first-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    & .stat {
+        display: flex;
+        align-items: baseline;
+        gap: 18px;
+    }
+
+    & .count {
+        font-family: "DM Serif Display";
+        font-size: 64px;
+        line-height: 1.37;
+        color: var(--color-green);
+    }
+
+    & .text {
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 10%;
+        color: #4C3F6399;
+    }
+
+    & p {
+        font-size: 20px;
     }
 }
