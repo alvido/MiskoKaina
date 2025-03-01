@@ -83,11 +83,11 @@ $(document).ready(function () {
 });
 //faq collapse
 
-//
+// updateBackgrounds
 function updateBackgrounds() {
   const isMobile = window.innerWidth <= 768;
 
-  document.querySelectorAll(".product").forEach(section => {
+  document.querySelectorAll("section").forEach(section => {
     const desktopBg = section.getAttribute("data-desktop-bg");
     const mobileBg = section.getAttribute("data-mobile-bg");
 
@@ -100,7 +100,7 @@ function updateBackgrounds() {
 }
 document.addEventListener("DOMContentLoaded", updateBackgrounds);
 window.addEventListener("resize", updateBackgrounds);
-//
+// 
 
 //swiper
 document.addEventListener("DOMContentLoaded", function () {
@@ -191,58 +191,43 @@ document.addEventListener("DOMContentLoaded", function () {
 //
 function addField() {
   const container = document.getElementById("kadastrinis-fields");
-  const fieldCount = container.getElementsByClassName("form-group").length;
+  const fields = container.getElementsByClassName("field-wrapper");
+  const fieldCount = fields.length;
 
   if (fieldCount < 3) {
+      const newIndex = fieldCount + 1; // Генерируем индекс (2, 3)
       const newField = document.createElement("div");
-      newField.classList.add("form-group");
+      newField.classList.add("field-wrapper");
       newField.innerHTML = `
-          <input type="text" name="kadastrinis[]" placeholder="XXXX/ZZZZ:YYYY">
+          <input type="text" name="kadastrinis[${newIndex}]" placeholder="XXXX/ZZZZ:YYYY">
           <button type="button" class="icon remove-field" onclick="removeField(this)">-</button>
       `;
       container.appendChild(newField);
   }
 
-  updateButtons();
+  updateAddButton();
 }
 
 function removeField(button) {
   button.parentElement.remove();
-  updateButtons();
+  updateAddButton();
 }
 
-function updateButtons() {
+function updateAddButton() {
   const container = document.getElementById("kadastrinis-fields");
-  const fields = container.getElementsByClassName("form-group");
+  const fields = container.getElementsByClassName("field-wrapper");
   const addButton = document.querySelector(".add-field");
 
-  if (fields.length >= 3 && addButton) {
-      addButton.style.display = "none";
-  } else if (fields.length < 3 && !addButton) {
-      const lastField = fields[fields.length - 1];
-      const newAddButton = document.createElement("button");
-      newAddButton.type = "button";
-      newAddButton.classList.add("add-field");
-      newAddButton.innerText = "+";
-      newAddButton.onclick = addField;
-      lastField.appendChild(newAddButton);
-  } else if (fields.length < 3 && addButton) {
-      addButton.style.display = "flex";
-  }
+  // Скрываем кнопку "+" если уже 3 поля, иначе показываем
+  addButton.style.display = fields.length >= 3 ? "none" : "flex";
+
+  // Обновляем индексы имен полей
+  Array.from(fields).forEach((field, index) => {
+      field.querySelector("input").name = `kadastrinis[${index + 1}]`;
+  });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  function updateRequiredLabels() {
-      document.querySelectorAll(".form-group label").forEach(function (label) {
-          let input = label.nextElementSibling;
-          if (input && input.required) {
-              label.classList.add("required");
-          } else {
-              label.classList.remove("required");
-          }
-      });
-  }
+document.addEventListener("DOMContentLoaded", updateAddButton);
 
-  updateRequiredLabels();
-});
+
 //

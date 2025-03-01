@@ -238,7 +238,17 @@
                                         </select>
                                     </div>
                                 </div>
-
+                                <div class="form-group" id="kadastrinis-fields">
+                                    <label>Kadastrinis nr.</label>
+                                    <div class="field-wrapper">
+                                        <input type="text" name="kadastrinis[1]" placeholder="XXXX/ZZZZ:YYYY">
+                                        <button type="button" class="icon add-field" onclick="addField()">+</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="required">Telefono nr.</label>
+                                    <input type="tel" name="phone" placeholder="Jūsų telefono numeris" required>
+                                </div>
 
                                 <button type="submit" class="btn-primary">
                                     SIŲSTI UŽKLAUSĄ

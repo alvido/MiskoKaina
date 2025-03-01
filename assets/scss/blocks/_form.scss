@@ -45,8 +45,16 @@
     }
 
     .form-group {
+        margin-bottom: 15px;
+    }
+
+    .field-wrapper {
         position: relative;
         margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
 

@@ -22,7 +22,7 @@
 .header__nav {
     padding-block: 24px;
 
-    @include mobile {
+    @include tablet {
         display: none;
     }
 }
@@ -37,10 +37,7 @@
     z-index: -1;
     background: #172826E5;
     transition-duration: var(--transition-duration);
-
-    @include mobile {
-        width: 100%;
-    }
+    width: 100%;
 
     &.nav--active {
         display: flex;

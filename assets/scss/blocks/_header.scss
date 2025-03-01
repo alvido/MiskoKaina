@@ -25,7 +25,7 @@
         align-items: center;
         justify-content: space-between;
 
-        @include mobile {
+        @include tablet {
             gap: 20px;
             justify-content: flex-start;
 
@@ -63,7 +63,7 @@
     align-items: flex-start;
     gap: clamp(1.25rem, -13.634rem + 23.26vw, 2.5rem);
 
-    @include mobile {
+    @include tablet {
         padding: 25px 0;
         flex-direction: column;
         gap: 25px;

@@ -1,6 +1,4 @@
 .request {
-
-
     &__wrap {
         padding: 40px 20px;
         color: var(--color-white);
@@ -73,35 +71,6 @@
                     margin: 10px auto 0;
                 }
             }
-        }
-    }
-}
-
-.quote {
-    &__inner {
-        display: flex;
-        flex-direction: column;
-        padding: 30px 40px;
-        border-radius: var(--border-radius-small);
-
-        & svg {
-            max-width: 25px;
-        }
-
-        & .column {
-            margin-top: auto;
-            gap: 9px;
-        }
-
-        & .author {
-            margin-top: 33px;
-            font-weight: 600;
-            font-size: 16px;
-        }
-
-        & .date {
-            font-size: 12px;
-            color: var(--color-text);
         }
     }
 }

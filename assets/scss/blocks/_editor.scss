@@ -1,6 +1,6 @@
 .editor {
     padding: 80px 0;
-    background-position: bottom;
+    background-position: bottom left;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -83,8 +83,14 @@
     grid-template-columns: repeat(4, 1fr);
 
     @include tablet {
+        margin-top: 70px;
         grid-template-columns: 1fr 1fr;
         gap: 35px;
+    }
+
+    @include mobile {
+        margin-top: 20px;
+        gap: 0;
     }
 
     &>div {
@@ -144,6 +150,6 @@
     }
 
     & p {
-        font-size: 20px;
+        @include fluid-text(20, 16);
     }
 }

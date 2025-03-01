@@ -1,0 +1,44 @@
+.quote {
+    padding: 80px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include mobile {
+        padding: 40px 0;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 40px;
+        background-color: var(--color-white);
+        border-radius: var(--border-radius-small);
+
+        @include phone {
+            max-width: 360px;
+            margin: auto;
+        }
+
+        & svg {
+            margin-bottom: 10px;
+            max-width: 25px;
+        }
+
+        & .column {
+            margin-top: auto;
+            gap: 9px;
+        }
+
+        & .author {
+            margin-block: 32px 10px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        & .date {
+            font-size: 12px;
+            color: var(--color-text);
+        }
+    }
+}
