@@ -109,6 +109,10 @@
 
                 & .form-group {
                     width: calc(50% - 10px);
+
+                    @include phone {
+                        width: 100%;
+                    }
                 }
             }
         }

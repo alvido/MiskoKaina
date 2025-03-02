@@ -1885,6 +1885,11 @@ textarea {
 .hero__form.column-2 form .form-group {
   width: calc(50% - 10px);
 }
+@media (max-width: 560px) {
+  .hero__form.column-2 form .form-group {
+    width: 100%;
+  }
+}
 .hero__form p {
   margin-top: 8px;
 }
@@ -2742,14 +2747,14 @@ table tbody td:first-child {
   }
 }
 .contact__links a img {
-  max-width: 20px;
+  max-width: 24px;
 }
 .contact__links span {
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 10px;
   line-height: 16px;
-  margin-left: 30px;
+  margin-left: 28px;
 }
 
 .requisite {
@@ -2919,7 +2924,6 @@ table tbody td:first-child {
 .footer__column button {
   width: 240px;
   margin-top: 30px;
-  font-size: clamp(12px, 1.4414414414vw, 16px);
 }
 @media (max-width: 767px) {
   .footer__column button {
