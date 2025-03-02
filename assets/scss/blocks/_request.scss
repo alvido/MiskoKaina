@@ -1,16 +1,49 @@
 .request {
     &__wrap {
-        padding: 40px 20px;
-        color: var(--color-white);
+        padding: 40px 32px;
         border-radius: var(--border-radius-small);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+
+        &.row {
+            padding: 45px 35px;
+            background-color: #f7f7f7;
+
+            @include tablet {
+                flex-direction: column;
+
+                & .subtitle {
+                    text-align: center;
+
+                    @include fluid-text(20, 18);
+                }
+
+                & h2 {
+                    text-align: center;
+                }
+
+                & .btn-primary {
+                    margin-top: 25px;
+                }
+            }
+
+            & .column {
+                flex: 1;
+
+                @include tablet {
+                    align-items: center;
+
+                }
+            }
+        }
     }
 
     &__inner {
         margin: 0 auto;
         max-width: 960px;
+
+
     }
 
     & .subtitle {

@@ -115,6 +115,8 @@
         & button {
             width: 240px;
             margin-top: 30px;
+            @include fluid-text(16, 12);
+
 
             @include mobile {
                 width: 100%;

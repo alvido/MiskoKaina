@@ -20,7 +20,14 @@
 
         &.active {
             & .icon {
-                rotate: 45deg;
+
+                & svg {
+                    opacity: 0;
+                }
+
+                &::after {
+                    opacity: 1;
+                }
             }
 
             & .content {
@@ -46,6 +53,21 @@
 
         & .icon {
             width: 24px;
+            color: var(--color-black);
+
+            & svg {
+                color: var(--color-black);
+                transition-duration: var(--transition-duration);
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: url(../images/icons/arrow-down-yellow.svg) no-repeat center / cover;
+                transition-duration: var(--transition-duration);
+                opacity: 0;
+            }
         }
 
         & .content {

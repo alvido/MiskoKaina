@@ -1,6 +1,7 @@
 .burger {
     @include reset-button;
     @include squere(20px);
+    min-width: 20px;
     @include flex-center;
     display: none;
     position: relative;

@@ -1,0 +1,51 @@
+.contact {
+    padding: 0;
+
+    &__links {
+        display: flex;
+        align-items: flex-start;
+
+        background: #F7F7F7;
+        padding: 55px;
+        border-bottom-left-radius: var(--border-radius-small);
+        border-bottom-right-radius: var(--border-radius-small);
+        max-width: 65%;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        @include tablet {
+            max-width: none;
+        }
+
+        @include mobile {
+            padding: 40px;
+        }
+
+        & a {
+            position: relative;
+            font-family: "Montserrat";
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 1.2;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+
+            @include hover {
+                color: var(--color-btn);
+            }
+
+            & img {
+                max-width: 20px;
+            }
+        }
+
+        & span {
+            font-family: "Montserrat";
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 16px;
+            margin-left: 30px;
+        }
+    }
+}

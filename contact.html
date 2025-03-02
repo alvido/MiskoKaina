@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes"> <!-- Для Android -->
+    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Для iOS -->
+
+    <title>Misko Kaina</title>
+
+    <link rel="icon" type="image/png" href="assets/images/logo.svg">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="site" id="page">
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__inner">
+                        <button class="burger" id="burgerButton">
+                            <span>
+                                Menu
+                            </span>
+                        </button>
+                        <div class="header__logo">
+                            <a href="index.html" class="logo">
+                                <img src="assets/images/logo.svg" alt="logo">
+                            </a>
+                            <div class="logo__desc">
+                                <span class="site__name">
+                                    MIŠKO KAINA
+                                </span>
+                                <hr>
+                                <p class="site__desc">
+                                    Dirbame su pagarba gamtai
+                                </p>
+                            </div>
+                        </div>
+                        <div class="header__links contact__links">
+                            <div class="column">
+                                <span style="color: var(--color-gray);">
+                                    Parašykite mums:
+                                </span>
+                                <a href="mailto:info@miskokaina.lt">
+                                    <img src="assets/images/icons/mail.svg" alt="mail">
+                                    info@miskokaina.lt
+                                </a>
+                            </div>
+                            <div class="column">
+                                <span style="color: var(--color-gray);">
+                                    Dirbame nuo 8:00h iki 19:00h
+                                </span>
+                                <a href="tel:+37065533322">
+                                    <img src="assets/images/icons/phone.svg" alt="phone">
+                                    +370 655 33322
+                                </a>
+                                <span style="color: var(--color-btn);">Užregistruoti skambutį</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary">
+                            GAUTI PASIŪLYMĄ
+                            <span>
+                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1 7a1 1 0 000 2V7zm14.707 1.707a1 1 0 000-1.414L9.343.929A1 1 0 007.93 2.343L13.586 8l-5.657 5.657a1 1 0 101.414 1.414l6.364-6.364zM1 9h14V7H1v2z"
+                                        fill="#146F60" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="#about">Apie mus</a>
+                        </li>
+                        <li>
+                            <a href="#Atsiliepimai">Atsiliepimai</a>
+                        </li>
+                        <li>
+                            <a href="calculate.html">Calculate</a>
+                        </li>
+                        <li>
+                            <a href="forest.html">Miškų kirtimas</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Kontaktai</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Pagrindinis</a>
+                        </li>
+                        <li>
+                            <a href="#services">Paslaugos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="mobile__nav">
+            <button class="icon close" id="closeMenu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.0001 9.8183L2.18182 0L0 2.18182L9.8183 12.0001L0.000232995 21.8182L2.18205 24L12.0001 14.1819L21.8182 24L24 21.8182L14.1819 12.0001L24.0002 2.18182L21.8184 1.07288e-06L12.0001 9.8183Z"
+                        fill="white" />
+                </svg>
+            </button>
+            <nav class="nav" role="navigation" aria-label="mobile navigation">
+                <button class="btn-primary">
+                    GAUTI PASIŪLYMĄ
+                    <span>
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1 7a1 1 0 000 2V7zm14.707 1.707a1 1 0 000-1.414L9.343.929A1 1 0 007.93 2.343L13.586 8l-5.657 5.657a1 1 0 101.414 1.414l6.364-6.364zM1 9h14V7H1v2z"
+                                fill="#146F60" />
+                        </svg>
+                    </span>
+                </button>
+                <div class="contact__links">
+                    <div class="column">
+                        <span style="color: var(--color-gray);">
+                            Parašykite mums:
+                        </span>
+                        <a href="mailto:info@miskokaina.lt">
+                            <img src="assets/images/icons/mail.svg" alt="mail">
+                            info@miskokaina.lt
+                        </a>
+                    </div>
+                    <div class="column">
+                        <span style="color: var(--color-gray);">
+                            Dirbame nuo 8:00h iki 19:00h
+                        </span>
+                        <a href="tel:+37065533322">
+                            <img src="assets/images/icons/phone.svg" alt="phone">
+                            +370 655 33322
+                        </a>
+                        <span style="color: var(--color-btn);">Užregistruoti skambutį</span>
+                    </div>
+                </div>
+                <ul class="nav__list">
+                    <li>
+                        <a href="#about">Apie mus</a>
+                    </li>
+                    <li>
+                        <a href="#Atsiliepimai">Atsiliepimai</a>
+                    </li>
+                    <li>
+                        <a href="calculate.html">Calculate</a>
+                    </li>
+                    <li>
+                        <a href="forest.html">Miškų kirtimas</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Kontaktai</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Pagrindinis</a>
+                    </li>
+                    <li>
+                        <a href="#services">Paslaugos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <main class="main" id="primary">
+            <section class="banner" style="background-image: url(assets/images/home-bg.png);">
+                <div class="container">
+                    <div class="banner__inner">
+                        <div class="column">
+                            <h1 class="title">
+                                Kontaktai
+                            </h1>
+                            <p>Susisiekti su mumis galite žemiau nurodytais kontaktais telefonu arba el. paštu.</p>
+                        </div>
+                        <div class="hero__form">
+                            <div class="content">
+                                <h3 style="text-align: center;">Užpildykite užklausą ir gaukite pasiūlymą.</h3>
+                            </div>
+                            <form action="#">
+                                <div class="form-group" id="kadastrinis-fields">
+                                    <label>Kadastrinis nr.</label>
+                                    <div class="field-wrapper">
+                                        <input type="text" name="kadastrinis[1]" placeholder="XXXX/ZZZZ:YYYY">
+                                        <button type="button" class="icon add-field" onclick="addField()">+</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="required">Telefono nr.</label>
+                                    <input type="tel" name="phone" placeholder="Jūsų telefono numeris" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>El. pašto adresas</label>
+                                    <input type="email" name="email" placeholder="Jūsų el. pašto adresas">
+                                </div>
+
+                                <button type="submit" class="btn-primary">
+                                    SIŲSTI UŽKLAUSĄ
+                                    <span>
+                                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1 7a1 1 0 000 2V7zm14.707 1.707a1 1 0 000-1.414L9.343.929A1 1 0 007.93 2.343L13.586 8l-5.657 5.657a1 1 0 101.414 1.414l6.364-6.364zM1 9h14V7H1v2z"
+                                                fill="#146F60"></path>
+                                        </svg>
+                                    </span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact">
+                <div class="container">
+                    <div class="contact__links">
+                        <div class="column">
+                            <span style="color: var(--color-gray);">
+                                Darbo laikas
+                            </span>
+                            <a>
+                                <img src="assets/images/icons/contact/time.svg" alt="mail">
+                                8:00 - 18:00
+                            </a>
+                        </div>
+                        <div class="column">
+                            <span style="color: var(--color-gray);">
+                                Telefonas:
+                            </span>
+                            <a href="tel:+37065533322">
+                                <img src="assets/images/icons/contact/phone.svg" alt="phone">
+                                +370 655 33322
+                            </a>
+                        </div>
+                        <div class="column">
+                            <span style="color: var(--color-gray);">
+                                El. paštas:
+                            </span>
+                            <a href="mailto:info@miskokaina.lt">
+                                <img src="assets/images/icons/contact/mail.svg" alt="mail">
+                                info@miskokaina.lt
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="requisite">
+                <div class="container">
+                    <h2 class="section-title">
+                        Įmonės rekvizitai
+                    </h2>
+                    <ul class="requisite__list">
+                        <li>
+                            <span>Įmonės pavadinimas:</span>
+                            <h4>MB Žaliuzių studija</h4>
+                        </li>
+                        <li>
+                            <span>PVM mokėtojo kodas:</span>
+                            <h4>LT100011878010</h4>
+                        </li>
+                        <li>
+                            <span>Atsiskaitomoji sąskaita:</span>
+                            <h4>LT4370 4406 0008 1434 44</h4>
+                        </li>
+                        <li>
+                            <span>Adresas:</span>
+                            <h4>Erfurto g. 4-69, LT-04117 Vilnius</h4>
+                        </li>
+                        <li>
+                            <span>Įmonės kodas:</span>
+                            <h4>304456488</h4>
+                        </li>
+                        <li>
+                            <span>Bankas:</span>
+                            <h4>AB SEB bankas</h4>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="header__logo">
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo-footer.svg" alt="logo">
+                        </a>
+                        <div class="logo__desc">
+                            <span class="site__name">
+                                MIŠKO KAINA
+                            </span>
+                            <hr>
+                            <p class="site__desc">
+                                Dirbame su pagarba gamtai
+                            </p>
+                        </div>
+                    </div>
+                    <p class="medium-text">
+                        Spygliuociu parkas pousia gyvenvietes vidu. Cia, tarp medziu, jau irengtos erdves maziems ir
+                        dideliems. Spygliuociu parkas pousia gyvenvietes vidu. Cia, tarp medziu, jau irengtos erdves
+                        maziems
+                        ir dideliems.
+                    </p>
+                </div>
+                <div class="footer__grid">
+                    <div class="footer__column">
+                        <img src="assets/images/icons/footer/mail.svg" alt="">
+                        <h3>Rašykite</h3>
+                        <p class="medium-text">Laiške neužmirškite įvesti savojo sklypo kadastrinio nr.</p>
+                        <a href="mailto:info@miskokaina.lt">info@miskokaina.lt</a>
+
+                    </div>
+                    <div class="footer__column">
+                        <img src="assets/images/icons/footer/phone.svg" alt="">
+                        <h3>Skambinkite</h3>
+                        <p class="medium-text">Asmeninės konsultacijos ir paslaugos privatiems miškų savininkams</p>
+                        <a href="tel:+370 614 81 385">+370 614 81 385</a>
+                    </div>
+                    <div class="footer__column">
+                        <img src="assets/images/icons/footer/nav.svg" alt="">
+                        <h3>Navigacija</h3>
+                        <nav class="footer__nav nav">
+                            <ul class="nav__list">
+                                <li>
+                                    <a href="index.html">Pagrindinis</a>
+                                </li>
+                                <li>
+                                    <a href="#services">Paslaugos</a>
+                                </li>
+                                <li>
+                                    <a href="#about">Apie mus</a>
+                                </li>
+                                <li>
+                                    <a href="#Atsiliepimai">Atsiliepimai</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Kontaktai</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__column">
+                        <img src="assets/images/icons/footer/doc.svg" alt="">
+                        <h3>Skirkite pasimatymą</h3>
+                        <p class="medium-text">
+                            Spauskite ir rezervuokite laiką pirminiam vaizdo pokalbiui. Tuo atveju,
+                            jei norite susitikti gyvai, susisiekite telefonu, ir sutarsime patogų laiką.
+                        </p>
+                        <button class="btn-primary btn-second">SIŲSTI UŽKLAUSĄ
+                            <span>
+                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1 7a1 1 0 000 2V7zm14.707 1.707a1 1 0 000-1.414L9.343.929A1 1 0 007.93 2.343L13.586 8l-5.657 5.657a1 1 0 101.414 1.414l6.364-6.364zM1 9h14V7H1v2z"
+                                        fill="#146F60" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="copy">
+                    <p class="medium-text center">2025 © Miško Kaina. Visos teisės saugomos.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/custom-select.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

@@ -18,6 +18,10 @@
             align-items: flex-start;
         }
 
+        @include phone {
+        text-wrap: nowrap;
+        }
+
         & span {
             font-family: "Noah Text";
             font-weight: 800;

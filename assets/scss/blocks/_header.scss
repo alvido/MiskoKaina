@@ -33,12 +33,17 @@
                 margin-left: auto;
                 height: 38px;
                 padding-inline: 13px 37px;
+                @include fluid-text(16, 12);
 
                 & span {
                     right: 8px;
                     @include squere(22px);
                 }
             }
+        }
+
+        @include phone {
+            gap: 10px;
         }
     }
 
@@ -50,50 +55,16 @@
 
     &__links {
 
-        @include tablet {
-            display: none !important;
+        &.contact__links {
+            padding: 0;
+            background: none;
+            gap: clamp(1.25rem, -13.634rem + 23.26vw, 2.5rem);
+
+            @include tablet {
+                display: none !important;
+            }
         }
 
 
-    }
-}
-
-.contact__links {
-    display: flex;
-    align-items: flex-start;
-    gap: clamp(1.25rem, -13.634rem + 23.26vw, 2.5rem);
-
-    @include tablet {
-        padding: 25px 0;
-        flex-direction: column;
-        gap: 25px;
-        border-bottom: 1px solid #D9D9D9;
-    }
-
-    & a {
-        position: relative;
-        font-family: "Montserrat";
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 1.2;
-        display: flex;
-        align-items: center;
-        gap: 9px;
-
-        @include hover {
-            color: var(--color-btn);
-        }
-
-        & img {
-            max-width: 20px;
-        }
-    }
-
-    & span {
-        font-family: "Montserrat";
-        font-weight: 600;
-        font-size: 10px;
-        line-height: 16px;
-        margin-left: 30px;
     }
 }

@@ -11,45 +11,86 @@
     }
 
     &__list {
-        margin-top: 40px;
+        margin-top: 30px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 60px 30px;
 
         @include laptop {
-            margin-top: 30px;
             justify-content: center;
         }
 
-        @include mobile {
-            gap: 30px;
-        }
-
-        @include phone {}
-
         & li {
-            max-width: calc(33.333% - 20px);
+            width: 33.333%;
             color: var(--color-white);
 
-            @include laptop {
-                max-width: calc(50% - 15px);
+            padding: 30px 20px;
+            border-top: 1px solid #FFFFFF1A;
+            border-left: 1px solid #FFFFFF1A;
+
+            &:nth-child(3n+1) {
+                padding-left: 0;
+                border-left: none;
+            }
+
+            &:nth-child(3n) {
+                padding-right: 0;
+            }
+
+            &:nth-child(-n+3) {
+                border-top: none;
+            }
+
+            @include tablet {
+                width: 50%;
+
+                &:nth-child(3n+1) {
+                    padding-left: 20px;
+                    border-left: 1px solid #FFFFFF1A;
+                }
+
+                &:nth-child(3n) {
+                    padding-right: 20px;
+                }
+
+                &:nth-child(-n+3) {
+                    border-top: 1px solid #FFFFFF1A;
+                }
+
+                &:nth-child(2n+1) {
+                    padding-left: 0px;
+                    border-left: none;
+                }
+
+                &:nth-child(2n) {
+                    padding-right: 0px;
+                }
+
+                &:nth-child(-n+2) {
+                    border-top: none;
+                }
             }
 
             @include mobile {
-                padding: 10px 14px;
-            }
+                padding-inline: 10px !important;
+                width: 100%;
+                border-left: none !important;
 
-            @include phone {
-                max-width: 100%;
+                &:nth-child(-n+2) {
+                    border-top: 1px solid #FFFFFF1A;
+                }
+
+                &:first-child {
+                    border-top: none;
+                }
             }
 
             & .row {
+                width: 100%;
                 gap: 15px;
                 margin-block: 15px;
 
                 @include mobile {
-                    width: 100%;
                     margin: 0 0 25px;
                     gap: 5px;
                 }
@@ -58,25 +99,19 @@
             & .content {
                 display: flex;
                 align-items: flex-start;
-                gap: 27px;
+                gap: 20px;
 
-                // @include mobile {
-                //     gap: 20px;
-                //     flex-direction: column;
-                // }
+                @include tablet {
+                    flex-direction: column;
+                }
+
+                @include phone {
+                    flex-direction: row;
+                }
             }
 
             & img {
-                max-width: 86px;
-            }
-
-
-            & h3 {
-                max-width: 160px;
-
-                @include mobile {
-                    max-width: none;
-                }
+                max-width: 64px;
             }
 
             & p {
