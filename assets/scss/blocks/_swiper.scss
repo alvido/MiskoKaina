@@ -35,6 +35,9 @@
     height: 45px;
     background: #AEAEAE99;
     border-radius: 50%;
+    outline: none;
+    appearance: none;
+    border: none;
 
     &:after {
         content: '';

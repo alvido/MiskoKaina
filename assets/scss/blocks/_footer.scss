@@ -10,6 +10,15 @@
         flex-direction: row;
         align-items: center;
 
+        @include mobile {
+            text-wrap: wrap;
+
+            & hr {
+                display: block;
+
+            }
+        }
+
         & p {
             font-size: 14px;
             max-width: 130px;

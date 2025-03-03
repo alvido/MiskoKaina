@@ -1453,6 +1453,11 @@ textarea {
   height: 45px;
   background: rgba(174, 174, 174, 0.6);
   border-radius: 50%;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
 }
 .swiper-button-next:after,
 .swiper-button-prev:after {
@@ -1987,11 +1992,10 @@ textarea {
 .services__list li .row {
   width: 100%;
   gap: 15px;
-  margin-block: 15px;
+  margin-bottom: 15px;
 }
 @media (max-width: 767px) {
   .services__list li .row {
-    margin: 0 0 25px;
     gap: 5px;
   }
 }
@@ -2022,6 +2026,7 @@ textarea {
 }
 .services__list li img {
   max-width: 64px;
+  min-width: 64px;
 }
 .services__list li p {
   font-size: 16px;
@@ -2810,6 +2815,14 @@ table tbody td:first-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 767px) {
+  .footer .logo__desc {
+    text-wrap: wrap;
+  }
+  .footer .logo__desc hr {
+    display: block;
+  }
 }
 .footer .logo__desc p {
   font-size: 14px;

@@ -88,10 +88,9 @@
             & .row {
                 width: 100%;
                 gap: 15px;
-                margin-block: 15px;
+                margin-bottom: 15px;
 
                 @include mobile {
-                    margin: 0 0 25px;
                     gap: 5px;
                 }
             }
@@ -112,6 +111,7 @@
 
             & img {
                 max-width: 64px;
+                min-width: 64px;
             }
 
             & p {
